@@ -113,7 +113,7 @@
     
             // 2. Network Latency Simulation (The "Race" Window)
             // We wait 400ms. This gives the user time to click more.
-            await new Promise(r => setTimeout(r, 400)); 
+            await new Promise(r => setTimeout(r, 1000)); 
 
             // 3. THE VULNERABILITY (Race Condition / Fail Open)
             // Normally, stock is 0. 
@@ -215,4 +215,5 @@
         }
     </script>
 </body>
+
 </html>
